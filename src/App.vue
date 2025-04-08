@@ -1,10 +1,7 @@
 <script setup>
-import ComponentVModel from './components/16-ComponentVModel/ComponentVModel.vue';
-import ProvideInject from './components/17-ProvideInject/ProvideInject.vue';
-import AsyncComponent from './components/18-AsyncComponent/AsyncComponent.vue';
+import SuspenseExp from './components/25-Suspense/SuspenseExp.vue';
 </script>
 
 <template>
-  <AsyncComponent />
-  <!-- <ComponentA /> -->
+   <SuspenseExp />
 </template>

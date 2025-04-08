@@ -91,3 +91,49 @@
   Async Component (Component bất đồng bộ) là component được load "lười" (lazy-load) — nghĩa là chỉ tải khi thật sự cần, thay vì tải toàn bộ ứng dụng ngay từ đầu.
   👉 Vue sẽ trì hoãn việc import component cho đến khi component đó được render lần đầu.
 */
+
+/*
+  Composables được sử dụng để chưa và tái sử dụng code (giống custom hook reạctjs)
+*/ 
+
+/*
+  Custom directives: cho phép bạn định nghĩa các hành vi tùy chỉnh có thể áp dụng trực tiếp vào DOM elements, tương tự như v-model, v-if, v-show,... nhưng do bạn tạo.
+*/ 
+
+
+/*
+  Plugin: Trong Vue.js, plugins là cách mở rộng toàn bộ ứng dụng bằng cách thêm tính 
+  năng, logic, hoặc tích hợp thư viện bên ngoài. Nó cho phép bạn đăng ký component,
+  directive, method, provide/inject, mixins, hoặc thêm global property.
+
+  🧩 Khi nào dùng plugin?
+    -Bạn muốn tái sử dụng một logic hoặc thư viện ở nhiều nơi trong app.
+    -Bạn muốn đăng ký global directive, component, hoặc method.
+    -Bạn đang làm một thư viện cho người khác dùng.
+*/ 
+
+/*
+  Transition: giúp tạo hiệu ứng mượt mà khi các element xuất hiện, biến mất hoặc thay đổi trạng thái 
+*/ 
+
+/*
+  Dynamic components: trong Vue – nơi bạn dùng thẻ <component :is="..."> để hiển thị component khác nhau tùy theo biến hoặc logic runtime.
+*/ 
+
+/*
+  <keep-alive> là một component đặc biệt của Vue giúp giữ lại state và cache component khi chúng được hiển thị/ẩn đi thay vì bị destroy hoàn toàn.
+  👉 Nói cách khác: khi bạn chuyển đổi component, Vue sẽ không unmount component cũ — mà nó sẽ được “ngủ đông” và khôi phục lại sau, y như bạn chưa từng rời đi 😎
+  ➡️ onActivated() và onDeactivated() là 2 lifecycle hook đặc biệt, chỉ chạy khi component được bọc bởi <keep-alive>.
+    + onActivated()	Khi component được hiển thị lại từ cache của <keep-alive>
+    + onDeactivated()	Khi component bị ẩn đi, nhưng không bị huỷ (destroy)
+*/ 
+
+/*
+  Teleport: Cho phép render nội dung ở một nơi khác trong DOM, ngoài vị trí component hiện tại
+  Dùng khi cần render popup, modal, tooltip... mà không muốn nó bị giới hạn bởi bố cục cha (overflow, z-index...)
+*/ 
+
+/*
+  <Suspense> là một built-in component của Vue 3 dùng để:
+  ✨ Hiển thị fallback UI (loading, skeleton, spinner...) trong khi chờ các component con async hoàn thành.
+*/ 
