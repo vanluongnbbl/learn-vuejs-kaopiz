@@ -1,7 +1,7 @@
 <script setup>
-import SuspenseExp from './components/25-Suspense/SuspenseExp.vue';
+import DemoPinia from './components/26-DemoPinia/DemoPinia.vue';
 </script>
 
 <template>
-   <SuspenseExp />
+   <DemoPinia />
 </template>
