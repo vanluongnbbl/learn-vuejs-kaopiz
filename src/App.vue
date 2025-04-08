@@ -1,7 +1,7 @@
 <script setup>
-import DemoPinia from './components/26-DemoPinia/DemoPinia.vue';
+import DemoVeeValidate from './components/27-VeeValidate/DemoVeeValidate.vue';
 </script>
 
 <template>
-   <DemoPinia />
+   <DemoVeeValidate />
 </template>
